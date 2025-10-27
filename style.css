@@ -52,12 +52,20 @@ section{
 .bg-custom-sec{
     background-color: var(--secondary-plus);
 }
-.bg-custom-log{
-    background: fixed linear-gradient(#F7EFE3, var(--primary-color) 160%);
+.bg-custom-form{
+    /* background: fixed linear-gradient(#F7EFE3, var(--primary-plus) 260%); */
+    background-color: #F7EFE3;
     width: 100vw;
     height: 90vh;
     top: 0;
     left: 0;
+}
+.custom-footer{
+    background-image: url(img/banner-main.jpg);
+    background-position: center;
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    height: 250px;
 }
 .break-line{
     width: 100%;
@@ -92,6 +100,18 @@ section{
     transform: none;
     filter: none, brightness(85%);
 }
+.btn-custom-ter{
+    background-color: #24D34C !important;
+    color: #FDF4E5 !important;
+}
+.btn-custom-ter:hover{
+    transform: scale(1.1);
+    filter: brightness(90%);
+}
+.btn-custom-ter:active{
+    transform: none;
+    filter: none, brightness(115%);
+}
 .card-icon{
     font-size: 2em;
 }
@@ -102,12 +122,14 @@ section{
     flex-wrap: nowrap !important;
 }
 .form-container{
-    width: 30vw;
+    width: 35vw;
+    padding: 0 5vw;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 25px;
+    box-shadow: inset 0 0 5px black, 0 0 10px black;
 }
 .user-stats{
     width: auto;

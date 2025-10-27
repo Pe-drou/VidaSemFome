@@ -15,7 +15,7 @@
         <img src="img/logo__2_-removebg-preview.png" alt="Logo empresa" style="height: 80%;">
     </a>
     <nav style="height: auto;">
-        <a href="index.html" class="btn btn-custom-pri">Voltar</a>
+        <a href="index.php" class="btn btn-custom-pri">Voltar</a>
     </nav>
 </header>
 <div class="d-flex align-items-center justify-content-center bg-custom-log">

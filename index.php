@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +16,7 @@
 <body>
     <!-- HEADER DO SITE -->
     <header id="header">
-        <a href="#" class="h-100 d-flex align-items-center justify-content-center" style="z-index: 12;">
+        <a href="index.php" class="h-100 d-flex align-items-center justify-content-center" style="z-index: 12;">
             <img src="img/logo__2_-removebg-preview.png" alt="Logo empresa" style="height: 80%;">
         </a>
         <nav>
@@ -20,7 +24,18 @@
                 <li><a href="#historia" class="btn text-light">Nossa História</a></li>
                 <li><a href="#impacto" class="btn text-light">Nosso Impacto</a></li>
                 <li><a href="#doar" class="btn text-light">Como doar</a></li>
-                <li><a href="cadastro.html" class="btn btn-custom-pri">Registre hoje!</a></li>
+                <?php if($_SESSION['usuario']): ?>
+                    <li>
+                        <div class="dropstart">
+                            <button class="btn btn-custom-pri dropdown-toggle" style="font-weight: bold; color: #eee !important;" type="button" data-bs-toggle="dropdown" aria-expanded="false"><?= htmlspecialchars($_SESSION['usuario']['nome']) ?></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="logout.php" class="dropdown-item">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                <?php else: ?>
+                    <li><a href="cadastro.php" class="btn btn-custom-pri">Registre hoje!</a></li>
+                <?php endif; ?>
             </ul>
             <button class="bi bi-list" id="mobile-menu" style="z-index: 12;"></button>
         </nav>
@@ -31,7 +46,7 @@
             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                 <h1 class="card-title" style="font-weight: bold;">Ajude famílias com cestas básicas!</h1>
                 <p style="font-size: 24px; font-weight: bold;">Sua contribuição faz a diferença. Juntos podemos alimentar a quem precisa.</p>
-                <a href="#" class="btn btn-custom-pri">Inscreva-se já!</a>
+                <a href="request.php" class="btn btn-custom-pri">Doe já!</a>
                 <div style="height: 30%;"></div>
             </div>
         </div>
@@ -92,7 +107,7 @@
                 <h5 class="fs-4">Quero doar alimentos</h5>
                 <p>Você pode doar alimentos diretamente em um dos nossos pontos de coleta</p>
             </div>
-            <a href="" class="btn btn-custom-sec fw-bold">Doe Aqui!</a>
+            <a href="request.php" class="btn btn-custom-sec fw-bold">Doe Aqui!</a>
         </div>
         <div class="row row-cols-lg-3 w-75 gap-5 justify-content-center card-list">
             <div class="card text-center col gap-1">
@@ -129,7 +144,6 @@
     <!-- FOOTER -->
     <footer class="w-100 d-flex align-items-center justify-content-evenly" style="height: 10vh; background-color: var(--secondary-color);">
         <p>&copy; 2025 VidaSemFome - Todos os direitos reservados</p>
-        <a href="#header">Voltar ao topo</a>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
