@@ -54,34 +54,37 @@ session_start();
     <div style="height: 15px !important;" class="break-line"></div>
     <!-- SEÇÃO DE CONTRIBUIÇÕES -->
     <section id="impacto" class="d-flex flex-column align-items-center justify-content-around pt-5 bg-custom-sec"> 
-        <h5 class="fs-3">Nosso impacto</h5>
-        <div class="row row-cols-lg-2 row-cols-1 w-75 mt-5">
-            <p class="w-50 col" id="contrib">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem voluptatem odit commodi incidunt vel neque delectus suscipit dolores aut. Officia repudiandae tempore, commodi incidunt aliquid ducimus sed similique fugiat culpa explicabo nam odio saepe delectus molestiae, aut, ipsam accusamus. Dolores quod placeat aut ipsam suscipit iusto in nemo veniam sunt voluptatem minus harum, facilis blanditiis, perspiciatis, ut sequi aperiam nesciunt animi voluptates! Mollitia laudantium odit facilis aspernatur facere eum saepe animi iste quos soluta quasi quisquam, atque ipsam minima, autem molestias aliquam. Animi quaerat aliquid cumque, voluptas quibusdam sit minus dicta, tempora doloremque eum deleniti voluptatem obcaecati assumenda voluptate possimus odit eos illo repellendus rem, earum natus totam dolorem. Asperiores ex aut repellat possimus minus adipisci voluptatibus aperiam. Omnis aliquid veritatis maxime pariatur officiis quaerat neque fugiat consequatur quasi ad a molestias soluta perferendis ut aliquam praesentium fuga amet, facilis molestiae rem corrupti sequi doloribus. Nam voluptatum iure officiis?
-            </p>
-            <div class="col d-flex flex-column align-items-center justify-content-between gap-3">
-                <div class="card text-center col-6">
-                    <i class="bi bi-geo-fill card-icon"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">0</h5>
-                        <p class="card-text">Pontos ativos</p>
-                    </div>
-                </div>
-                <div class="card text-center col-6">
-                    <i class="bi bi-people-fill card-icon"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">-1</h5>
-                        <p class="card-text">Famílias ajudadas</p>
-                    </div>
-                </div>
-                <div class="card text-center col-6">
-                    <i class="bi bi-box-seam-fill card-icon"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">+0</h5>
-                        <p class="card-text">Cestas doadas</p>
-                    </div>
+        <h5 class="fs-3 mb-3">Nosso impacto</h5>
+        <div class="w-100 px-5 mb-3 d-flex flex-row align-items-center justify-content-between gap-3">
+            <div class="card text-center w-25">
+                <i class="bi bi-geo-fill card-icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">0</h5>
+                    <p class="card-text">Pontos ativos</p>
                 </div>
             </div>
+            <div class="card text-center w-25">
+                <i class="bi bi-people-fill card-icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">-1</h5>
+                    <p class="card-text">Famílias ajudadas</p>
+                </div>
+            </div>
+            <div class="card text-center w-25">
+                <i class="bi bi-box-seam-fill card-icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">+0</h5>
+                    <p class="card-text">Cestas doadas</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between w-75">
+            <p id="contrib">
+                <strong>Quero contribuir uma cesta</strong><br>
+                Cadastre-se para poder contribuir à uma cesta básica<br>
+                Clique no botão "Doe Já" e cadastre sua doação
+            </p>
+            <a href="request.php" class="btn btn-custom-sec px-5">Doe já</a>
         </div>
     </section>
     <div style="height: 15px !important;" class="break-line"></div>
@@ -91,17 +94,38 @@ session_start();
             <div class="row row-cols 2 w-75 mt-5 text-list">
                 <div class="col">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, voluptatum asperiores, laudantium veniam expedita rem delectus exercitationem velit unde, possimus adipisci? Accusantium ipsa aspernatur, et harum numquam id cum dolorum consequuntur esse, ratione blanditiis, unde minima. Earum, ea sed, vitae corporis maiores alias quas, similique laboriosam ut voluptates mollitia. Voluptates deleniti et molestiae facilis, totam cupiditate laboriosam voluptate molestias ratione ad doloremque saepe beatae ut deserunt eveniet at neque praesentium sint, ullam nam dolor blanditiis veritatis fugit! Corrupti, perferendis similique tempore animi inventore architecto ex in officiis distinctio quis rerum repudiandae ut aliquid sed nam odit asperiores! Nemo, quos vel?
+                        Nossa jornada começou com um simples gesto: doar alimento a quem mais precisava.<br> O que era pequeno cresceu, ganhou força e hoje é um movimento de solidariedade que alimenta famílias e espalha esperança. <br>Mas nossa luta não para. Estamos trabalhando para que empresários e comerciantes também possam ajudar com ainda mais impacto: unindo a generosidade à possibilidade de desconto tributário, criando um ciclo onde todos ganham — famílias, empresas e sociedade. Cada cesta básica entregue é uma vitória contra a fome. Cada empresa parceira, uma prova de que juntos somos mais fortes.
                     </p>
                 </div>
                 <div class="col">
-                    <img src="#" alt="Imagem" class="w-100">
+                    <img src="img/banner.jpg" alt="Imagem" class="w-100" style="border-radius: 5%;">
                 </div>
             </div>
     </section>
     <div style="height: 15px !important;" class="break-line"></div>
+    <!-- SEÇÃO PONTOS DE REFERÊNCIA -->
+    <section id="pontos" class="d-flex flex-column align-items-center justify-content-around pt-5 bg-custom-sec">
+        <h5 class="fs-4">Pontos de Entrega</h5>
+        <p>Encontre nossos pontos de coleta mais próximos de você!</p>
+        <div class="d-flex flex-column align-items-start justify-content-center p-3 mb-3" style="width: 80vw; background-color: var(--light-color); border-radius: 15px;">
+            <p class="fs-4 m-0">Centro Comunitário Esperança</p>
+            <p>Endereço: R. das FLores, 123</p>
+            <a href="google.com/maps/search/?api=1&query=-23.55052,-46.633308">Abrir no Google Maps</a>
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-center p-3 mb-3" style="width: 80vw; background-color: var(--light-color); border-radius: 15px;">
+            <p class="fs-4 m-0">Associação Bom Samaritano</p>
+            <p>Endereço: R. Augusta, 500</p>
+            <a href="google.com/maps/search/?api=1&query=-23.55052,-46.633308">Abrir no Google Maps</a>
+        </div>
+            <div class="d-flex flex-column align-items-start justify-content-center p-3 mb-3" style="width: 80vw; background-color: var(--light-color); border-radius: 15px;">
+            <p class="fs-4 m-0">Centro Cultural União</p>
+            <p>Endereço: Av. Santo Amaro, 800</p>
+            <a href="google.com/maps/search/?api=1&query=-23.55052,-46.633308">Abrir no Google Maps</a>
+        </div>
+    </section>
+    <div style="height: 15px !important;" class="break-line"></div>
     <!-- SEÇÃO INFORMAÇÃO -->
-    <section id="doar" class="d-flex flex-column align-items-center justify-content-around pt-5 bg-custom-sec">
+    <section id="doar" class="d-flex flex-column align-items-center justify-content-around pt-5 bg-custom-pri">
         <div class="d-flex align-items-center justify-content-evenly w-75">
             <div>
                 <h5 class="fs-4">Quero doar alimentos</h5>
